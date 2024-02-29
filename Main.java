@@ -10,8 +10,7 @@ import java.util.Scanner;
         int visitorAge;
         char visitorGender;
         boolean isResident;
-        double temperature;
-
+     
         // Solicitar al usuario que ingrese la información del visitante
         System.out.println("Por favor, ingrese la información del visitante:");
 
@@ -27,17 +26,13 @@ import java.util.Scanner;
         System.out.print("¿Es residente? (true/false): ");
         isResident = scanner.nextBoolean();
 
-        System.out.print("Temperatura corporal: ");
-        temperature = scanner.nextDouble();
-
         // Imprimir la información del visitante
         System.out.println("\nInformación del Visitante:");
         System.out.println("Nombre: " + visitorName);
         System.out.println("Edad: " + visitorAge);
         System.out.println("Género: " + visitorGender);
         System.out.println("¿Es Residente?: " + isResident);
-        System.out.println("Temperatura Corporal: " + temperature);
-
+     
         scanner.close(); // Cerrar el scanner al finalizar
     }
 }
